@@ -1,13 +1,13 @@
 disabled = false
-locale = "en"
-label = "English"
-weight = 1
+locale = "fa"
+label = "فارسی"
+weight = 2
 title = "Blowfish"
 
 [params]
-  displayName = "English"
-  isoCode = "en"
-  rtl = false
+  displayName = "فارسی"
+  isoCode = "fa"
+  rtl = true
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
@@ -15,7 +15,7 @@ title = "Blowfish"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
-  name = "Your name here"
+  name = "صالحم"
   email = "mstalebizadeh@gmail.com"
   image = "img/blowfish_logo.png"
   imageQuality = 96
@@ -69,7 +69,6 @@ title = "Blowfish"
 #     { tumblr = "https://username.tumblr.com" },
 #     { twitch = "https://twitch.tv/username" },
 #     { untappd = "https://untappd.com/user/username" },
-#     { twitter = "https://twitter.com/username" },
     { x-twitter = "https://twitter.com/mrtzdev" },
 #     { whatsapp = "https://wa.me/phone-number" },
 #     { youtube = "https://youtube.com/username" },

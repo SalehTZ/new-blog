@@ -11,12 +11,12 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "About"
+  name = "درباره من"
   pageRef = "about"
   weight = 10
 
 [[main]]
-  name = "Blog"
+  name = "بلاگ"
   pageRef = "blog"
   weight = 15
 
@@ -87,11 +87,11 @@
 # the copyright notice. Configure as per the main menu above.
 
  [[footer]]
-   name = "Tags"
+   name = "تگها"
    pageRef = "tags"
    weight = 10
 
  [[footer]]
-   name = "About"
+   name = "درباره من"
    pageRef = "about"
    weight = 20
