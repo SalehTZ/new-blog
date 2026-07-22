@@ -1,32 +1,112 @@
 ---
-title: whoami 🤷‍♂️
-summary: Introduction on Mordecai Kipng'etich
-description: Introduction on Mordecai Kipng'etich
-date: 2022-10-25T17:57:52+03:00
+title: "About Me"
+date: 2019-08-02T11:04:49+08:00
 draft: false
-
+description: "A brief introduction to who I am and what I do."
 showDate: false
 showReadingTime: false
-showViews: false
-showLikes: false
-sharingLinks: false
 showAuthor: false
-showPagination : false
-replyByEmail: false
+showPagination: false
 ---
 
-Hi 👋 I'm a STEM Instructor, a freelance Software Developer and a Computer Science graduate based in Kenya. 
-I write code, teach tech, build things, and learn as I go.
+![Flutter](https://img.shields.io/badge/Flutter-%230175C2.svg?style=flat&logo=flutter&logoColor=FFFFFF)
+![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=flat&logo=dart&logoColor=FFFFFF)
+![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat&logo=django&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white)
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=222222)
+![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=FFFFFF)
+![Figma](https://img.shields.io/badge/-Figma-000000?style=flat&logo=Figma&logoColor=FFFFFF)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=FFFFFF)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=FFFFFF)
+![GitLab](https://img.shields.io/badge/-GitLab-222222?style=flat&logo=GitLab&logoColor=FCC624)
+![Android Studio](https://img.shields.io/badge/-AndroidStudio-3DDC84?style=flat&logo=android-studio&logoColor=FFFFFF)
+![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJIDEA-000000?style=flat&logo=intellij-idea&logoColor=FFFFFF)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=222222)
 
-I've shared more about my professional life over on [LinkedIn](https://linkedin.com/in/insidemordecai) if you're keen on that.
+## 👨‍💻 About Me
 
-Outside of work, I obsessively watch motorsport -- mainly Formula 1 and its feeder series -- and run a [car/motorsport blog](https://auto.insidemordecai.com/) when I remember.
+I'm a Flutter Application Developer with 5 years of experience, skilled in transforming designs into user-friendly apps to enhance user satisfaction. I have a passion for continuous learning and a sustainable mindset.
 
-I also read a lot, you can check out my [Goodreads](https://www.goodreads.com/insidemordecai/) to see what I've been flipping through.
+## 🛠️ Skills
 
-In my former years, I did some piano playing and singing. 
-These days, the singing's still there but just to a much smaller (and furrier) audience.
+| Category      | Skills                                                              |
+|---------------|---------------------------------------------------------------------|
+| **Languages**   | Flutter/Dart, Java, Python, SQL, C/C++                              |
+| **CI/CD**       | GitLab CI, GitHub Actions                                           |
+| **OS**          | Android, Linux, Windows                                             |
+| **Technologies**| Riverpod/Provider, Hive, MQTT, WebSocket, RESTful, GraphQL, AppWrite, Firebase, RxDart, Git, Figma |
+| **Soft Skills** | Adaptability, Flexibility, Quick Learner, Passionate, Attention to detail |
 
-{{< alert "circle-info" >}}
-Noticed a bug or got a suggestion? [Open an issue](https://github.com/insidemordecai/insidemordecai.com/issues) or let me know.
-{{< /alert >}}
+## 🏢 Experience
+
+### NewElectron (IoT Home Automation)
+
+**Flutter Developer** (4/2024 - Present, On-Site - Kerman, Iran)
+
+- Created a multi-platform, user-friendly application that seamlessly connects users to their home IoT devices across multiple platforms.
+- Implemented a method to connect to devices through local UDP or over the Internet using MQTT, based on the connection state of IoT devices and IO Devices (mobile/desktop/web app).
+- Handling hundreds of incoming messages from MQTT and/or UDP sockets.
+- Working with various devices with different commands to manage different device settings.
+
+### Cateri
+
+**Junior Flutter Developer** (4/2023 - 3/2024, Remote - Kuwait)
+
+- Created a user-friendly mobile app connecting users to local food trucks around Kuwait City.
+- Implemented a custom Map screen with cool animations to make the user experience more enjoyable.
+- Reduced food search time by half with instant menu access and precise truck locations on Map.
+- Using AppWrite BaaS reduced costs and improved app functionality.
+
+## 🌍 Open-Source Contributions
+
+### Flutter SDK
+
+- Contributed to performance and documentation improvements in the official Flutter SDK.
+- Addressed long-standing issues such as [#59306](https://github.com/flutter/flutter/issues/59306) related to the integration of the platform view.
+- Closed issue [#167922](https://github.com/flutter/flutter/issues/167922) with pull request [#172056](https://github.com/flutter/flutter/pull/172056).
+- Closed issue [#171815](https://github.com/flutter/flutter/issues/171815) with pull request [#172100](https://github.com/flutter/flutter/pull/172100).
+- Pull request [#172096](https://github.com/flutter/flutter/pull/172096) closes issues [#171813](https://github.com/flutter/flutter/issues/171813) and [#171814](https://github.com/flutter/flutter/issues/171814).
+- Pull request [#172099](https://github.com/flutter/flutter/pull/172099) closes issues [#171816](https://github.com/flutter/flutter/issues/171816) and [#171817](https://github.com/flutter/flutter/issues/171817), resulting in the closure of parent issue [#171812](https://github.com/flutter/flutter/issues/171812).
+- [View on GitHub](https://github.com/flutter/flutter)
+
+### CafeBazaar - flutter_poolakey SDK
+
+- Upgraded the plugin to use the latest Flutter SDK and Android Gradle Plugin.
+- Modernized Gradle configuration and fixed deprecation warnings for compatibility with newer Android builds.
+- [View Pull Request](https://github.com/cafebazaar/flutter_poolakey/pull/36)
+
+## 🚀 Projects
+
+### Local Chat App
+
+A fast and simple chat app built with Flutter, using UDP for messaging, Riverpod for state management, and Hive for local storage.
+
+- Runs on a separate Isolate for smooth performance.
+- Successfully managed concurrency by using isolates to offload network operations.
+- Implemented real-time UDP communication with RawDatagramSocket for low-latency messaging.
+- Leveraged Riverpod for scalable state management and Hive for persistent storage.
+- Coordinated cross-isolate communication with send/receive ports.
+- Ensured robustness with error handling for reliable data transfer, maintaining a seamless user experience even under unstable network conditions.
+- [View on GitHub](https://github.com/SalehTZ/udp_riverpod_isolate)
+
+### Note App
+
+This project is a note-taking application developed using the Flutter framework, with Hive serving as the database. The application empowers users to effortlessly create, delete, and edit notes, providing a seamless and efficient note-taking experience.
+
+- [View on GitHub](https://github.com/SalehTZ/note_app_flutter)
+
+## 🎓 Education
+
+**Shahid Bahonar University of Kerman**
+Bachelor of Computer Science (9/2016 - 9/2020)
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SalehTZ&langs_count=9&layout=compact&theme=dark">
+  <img src="https://github-readme-stats.vercel.app/api?username=salehtz&theme=dark&hide_border=false&include_all_commits=true&count_private=true">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=salehtz&theme=dark&hide_border=false">
+</p>
