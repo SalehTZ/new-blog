@@ -1,0 +1,2 @@
+{{- $css := resources.Get "css/gradient-bg.css" | resources.Minify | resources.Fingerprint "sha512" -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
