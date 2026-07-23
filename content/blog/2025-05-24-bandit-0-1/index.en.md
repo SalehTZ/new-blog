@@ -2,6 +2,8 @@
 title: "Bandit Level 0-1: Your First Steps into the Terminal Abyss (Don't Trip!)"
 date: "2025-05-24T08:50:46+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 1
 description: "Welcome to Bandit! In this post, we'll hilariously guide you through connecting to the OverTheWire Bandit server and conquering your first two levels. Prepare to type, to wonder, and to finally feel like a terminal wizard (kinda)."
 tags:
   - "Bandit"

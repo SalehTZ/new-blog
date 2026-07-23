@@ -2,6 +2,8 @@
 title: "Bandit Level 10 to 11: The Secret Language of Base64"
 date: "2025-10-15T13:42:18+02:00"
 draft: false
+series: ["Bandit"]
+series_order: 11
 description: "A complete walkthrough for solving Bandit Level 10 to 11. Learn what Base64 encoding is and how to use the 'base64 -d' command to decode a file and reveal the password for the next level."
 tags:
   - "Bandit"

@@ -2,6 +2,8 @@
 title: "Bandit Level 9 to 10: Sifting Through Binary Data with 'strings"
 date: "2025-10-15T13:40:11+02:00"
 draft: false
+series: ["Bandit"]
+series_order: 10
 description: "A clear guide to solving Bandit Level 9 to 10. Learn how to use the 'strings' command to extract human-readable text from a binary file and pipe the output to 'grep' to find the password."
 tags:
   - "Bandit"

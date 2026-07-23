@@ -2,6 +2,8 @@
 title: "Bandit Level 6 to 7: Searching the Entire Filesystem"
 date: "2025-05-27T09:01:17+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 7
 description: "Solve Bandit Level 6 to 7 by mastering the 'find' command to search the entire filesystem. Learn to use the -user, -group, and -size predicates and how to redirect stderr with '2>/dev/null' to hide errors."
 tags:
   - "Bandit"

@@ -2,6 +2,8 @@
 title: "Bandit Level 2 to 3: The Ultimate Filename Challenge"
 date: "2025-05-26T09:08:51+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 3
 description: "A crucial walkthrough for OverTheWire's Bandit Level 2 to 3 with a new, tricky filename: '--spaces in this filename--'. Learn how to combine path specification and quoting to read files with complex names."
 tags:
   - "Bandit"

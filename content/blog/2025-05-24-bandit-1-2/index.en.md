@@ -2,6 +2,8 @@
 title: "Bandit Level 1 to 2: The Case of the Hyphen File"
 date: "2025-05-24T08:50:46+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 2
 description: "A clear walkthrough for solving the OverTheWire Bandit wargame from Level 1 to Level 2. Learn how to handle filenames that start with a special character like a hyphen (-) using './' to specify the path."
 tags:
   - "Bandit"

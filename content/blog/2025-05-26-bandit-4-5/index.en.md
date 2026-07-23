@@ -2,6 +2,8 @@
 title: "Bandit Level 4 to 5: Finding Human-Readable Text in a Data Maze"
 date: "2025-05-26T09:09:12+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 5
 description: "A complete guide for solving OverTheWire Bandit Level 4 to 5. Learn how to use the powerful 'file' command to analyze a directory of files and identify the single human-readable ASCII text file containing the password."
 tags:
   - "Bandit"

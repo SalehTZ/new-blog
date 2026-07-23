@@ -2,6 +2,8 @@
 title: "Bandit Level 5 to 6: Mastering the 'find' Command"
 date: "2025-05-27T09:01:10+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 6
 description: "A comprehensive guide to solving Bandit Level 5 to 6. Learn how to use the 'find' command to search for files based on specific metadata like size in bytes, file type, and permissions to uncover the hidden password."
 tags:
   - "Bandit"

@@ -11,18 +11,18 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "درباره من"
-  pageRef = "about"
-  weight = 10
-
-[[main]]
   name = "بلاگ"
   pageRef = "blog"
-  weight = 15
+  weight = 10
 
 [[main]]
   name = "دسته‌بندی‌ها"
   pageRef = "categories"
+  weight = 15
+
+[[main]]
+  name = "درباره من"
+  pageRef = "about"
   weight = 20
 
 #[[main]]

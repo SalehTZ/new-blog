@@ -2,6 +2,8 @@
 title: "Bandit Level 8 to 9: Finding the Unique Line"
 date: "2025-05-27T09:01:30+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 9
 description: "Solve Bandit Level 8 to 9 by creating a powerful command-line pipeline. Learn to use 'sort', 'uniq -c', and 'grep' to find the only line that appears just once in a large dataset."
 tags:
   - "Bandit"

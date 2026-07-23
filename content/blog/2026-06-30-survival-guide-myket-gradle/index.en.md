@@ -35,13 +35,12 @@ If you want to manually use the Myket repository for a specific project of your 
 
 To do this, simply open your project's `build.gradle` or `settings.gradle` file and add the Myket URL to the `repositories` block:
 
-```gradle
+```gradle {title="build.gradle" lineNos=inline}
 repositories {
     maven { url "[https://maven.myket.ir](https://maven.myket.ir)" }
     google()
     mavenCentral()
 }
-
 ```
 
 This method works fine, but if you frequently create new projects, manually configuring this for every single project is quite exhausting. So, let's move on to the second solution.
@@ -63,7 +62,7 @@ The solution involves creating or editing the `init.gradle.kts` file and placing
 
 Copy the code below and paste it into this file:
 
-```kotlin
+```kotlin {title="init.gradle.kts" lineNos=inline}
 import org.gradle.api.artifacts.repositories.MavenArtifactRepository
 import org.gradle.api.artifacts.dsl.RepositoryHandler
 
@@ -96,7 +95,6 @@ gradle.settingsEvaluated {
     pluginManagement.repositories.enableMirror()
     dependencyResolutionManagement.repositories.enableMirror()
 }
-
 ```
 
 With this configuration, any request Gradle makes to download libraries from blocked servers will be automatically redirected to the Myket mirror.

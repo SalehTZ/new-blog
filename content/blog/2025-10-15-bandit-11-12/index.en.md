@@ -2,6 +2,8 @@
 title: "Bandit Level 11 to 12: Cracking the Caesar Cipher (ROT13)"
 date: "2025-10-15T13:45:10+02:00"
 draft: false
+series: ["Bandit"]
+series_order: 12
 description: "A detailed guide to solving Bandit Level 11 to 12. Learn what a Caesar cipher (specifically ROT13) is and how to reverse it using the powerful 'tr' (translate) command to find the password."
 tags:
   - "Bandit"

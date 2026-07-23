@@ -2,6 +2,8 @@
 title: "Bandit Level 7 to 8: Finding a Needle with grep"
 date: "2025-05-27T09:01:22+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 8
 description: "Learn how to solve Bandit Level 7 to 8 by using the 'grep' command to search for a specific pattern ('millionth') within a large data file to efficiently find the password for the next level."
 tags:
   - "Bandit"

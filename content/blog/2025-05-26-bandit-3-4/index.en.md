@@ -2,6 +2,8 @@
 title: "Bandit Level 3 to 4: Uncovering Dot-Prefixed Files"
 date: "2025-05-26T09:08:57+03:30"
 draft: false
+series: ["Bandit"]
+series_order: 4
 description: "Follow this step-by-step guide for OverTheWire's Bandit Level 3 to 4. Learn how files starting with dots, like '...Hiding-From-You', are hidden by default and how to reveal them using the 'ls -a' command."
 tags:
   - "Bandit"

@@ -8,7 +8,7 @@ showReadingTime: false
 showAuthor: false
 showPagination: false
 showHero: true
-heroStyle: "background"
+heroStyle: "big"
 layoutBackgroundHeaderSpace: true
 ---
 
