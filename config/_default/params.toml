@@ -162,9 +162,9 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # domain = "llama.yoursite.com"
 
 [umamiAnalytics]
-  # websiteid = "ABC12345"
-  # domain = "llama.yoursite.com"
-  # dataDomains = "yoursite.com,yoursite2.com"
+  websiteid = "d23ea265-0aa4-4ad9-b01f-4789b7aa59a1"
+  domain = "cloud.umami.is"
+  dataDomains = "salehtz.ir"
   # scriptName = ""
   # enableTrackEvent = true
 
