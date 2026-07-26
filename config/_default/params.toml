@@ -166,7 +166,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   domain = "cloud.umami.is"
   dataDomains = "salehtz.ir"
   # scriptName = ""
-  # enableTrackEvent = true
+  enableTrackEvent = true
 
 [selineAnalytics]
   # token = "XXXXXX"
