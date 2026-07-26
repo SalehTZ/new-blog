@@ -1,2 +1,7 @@
 {{- $css := resources.Get "css/gradient-bg.css" | resources.Minify | resources.Fingerprint "sha512" -}}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Alex Tz">
+<meta name="mobile-web-app-capable" content="yes">
