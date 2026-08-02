@@ -20,6 +20,8 @@ categories:
   - "Cybersecurity"
   - "CTF"
 slug: "bandit-8-9"
+aliases:
+  - /bandit_8_9/
 ---
 
 ## Introduction

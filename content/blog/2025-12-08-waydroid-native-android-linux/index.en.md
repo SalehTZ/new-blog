@@ -15,6 +15,8 @@ categories:
   - "Development"
   - "Linux Tutorials"
 slug: "waydroid-native-android-linux"
+aliases:
+  - /waydroid_is_fire_native_android_on_linux/
 ---
 
 Imagine running Android apps on your Linux desktop—not in a slow, heavy emulator, but **natively**, sharing your kernel with the host. The performance is absolutely **FIRE**.
@@ -44,8 +46,6 @@ sudo waydroid init
 ```
 
 Then make sure you have Wayland Session enabled (Ubuntu 22.04+). See Below:
-
-
 
 ## 2\. Running Waydroid: X11 vs. Wayland
 

@@ -13,6 +13,8 @@ categories:
   - "Backend"
   - "DevOps"
 slug: "install-docker-ubuntu"
+aliases:
+  - /ultimate_guide_to_install_docker/
 ---
 
 Docker has revolutionized how developers build, ship, and run applications. By using containerization, it allows you to package an application with all of its dependencies into a standardized unit for software development. Whether you're setting up a simple project or deploying a complex backend like Appwrite, having Docker installed correctly is the essential first step.

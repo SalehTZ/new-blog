@@ -3,6 +3,8 @@ title: "First Post"
 date: "2025-03-25T11:56:49+03:30"
 draft: false
 slug: "first-post"
+aliases:
+  - /first_post/
 ---
 
 <!--more-->
@@ -16,7 +18,7 @@ This is my first post — a small milestone that marks the beginning of my journ
 
 ## 🌱 Why This Blog?
 
-I created this space as a personal knowledge hub — a place to document what I learn, build, and discover. 
+I created this space as a personal knowledge hub — a place to document what I learn, build, and discover.
 
 Writing helps clarify thoughts, and sharing them might help others too. Whether you're here to learn, get inspired, or just curious — **welcome aboard**!
 
@@ -56,4 +58,4 @@ Let’s learn and build together!
 
 *Until next time, happy coding!*
 
-— _Saleh Talebi Zadeh_
+— *Saleh Talebi Zadeh*

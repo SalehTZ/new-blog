@@ -11,6 +11,8 @@ categories:
   - "Flutter"
   - "Release Notes"
 slug: "flutter-3-35-0"
+aliases:
+  - /flutter_3_35_0/
 ---
 
 <!-- # Flutter 3.35.0 is Here — and I’m Proud to Be Part of It -->

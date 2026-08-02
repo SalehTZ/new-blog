@@ -13,6 +13,8 @@ categories:
   - "UI"
   - "Performance"
 slug: "shrinkwrap-vs-slivers"
+aliases:
+  - /shrinkwrap_vs_slivers/
 ---
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/LUqDNnv_dh0" title="ShrinkWrap vs Slivers in Flutter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

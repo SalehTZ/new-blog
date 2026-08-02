@@ -19,6 +19,8 @@ categories:
   - "Cybersecurity"
   - "CTF"
 slug: "bandit-4-5"
+aliases:
+  - /bandit_4_5/
 ---
 
 ## Introduction

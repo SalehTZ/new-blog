@@ -19,6 +19,8 @@ categories:
   - "Bandit"
   - "OverTheWire"
 slug: "bandit-0-1"
+aliases:
+  - /bandit_0_1/
 ---
 
 <!--more-->

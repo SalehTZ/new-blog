@@ -18,6 +18,8 @@ categories:
   - "Cybersecurity"
   - "CTF"
 slug: "bandit-3-4"
+aliases:
+  - /bandit_3_4/
 ---
 
 ## Introduction

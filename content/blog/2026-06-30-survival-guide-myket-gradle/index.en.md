@@ -16,6 +16,8 @@ categories:
   - "Programming"
   - "Tutorial"
 slug: "survival-guide-myket-gradle"
+aliases:
+  - /survival_guide_1/
 ---
 
 <!--more-->

@@ -13,6 +13,8 @@ categories:
   - "UI"
   - "Performance"
 slug: "shrinkwrap-vs-slivers"
+aliases:
+  - /shrinkwrap_vs_slivers/
 ---
 
 <!--more-->
@@ -95,8 +97,6 @@ CustomScrollView(
 | **Flexibility** | Limited customization              | Highly customizable scrolling behaviors                |
 | **Use-Case**    | Small, nested scrollable widgets   | Advanced scrolling effects and large lists             |
 
-
-
 ### 💡 Bonus Tip: Don't Lose Lazy Loading
 
 Sometimes, instead of using `shrinkWrap: true`, you can wrap your `ListView` with an `Expanded` widget. This way, Flutter keeps the **lazy loading behavior**, which means better performance with large lists:
@@ -123,9 +123,9 @@ However, be careful: this only works if the parent `Column` is inside a widget t
 
 To avoid this, make sure:
 
-* The parent `Column` is constrained in height
-* Or use a `SizedBox` with a fixed height for your `ListView`
-* Or fall back to `shrinkWrap` if bounded height isn't an option
+- The parent `Column` is constrained in height
+- Or use a `SizedBox` with a fixed height for your `ListView`
+- Or fall back to `shrinkWrap` if bounded height isn't an option
 
 ---
 

@@ -16,10 +16,11 @@ categories:
   - "DevOps"
   - "AI"
 slug: "deploy-n8n-docker-nginx"
+aliases:
+  - /how_to_deploy_n8n_on_server_nginx/
 ---
 
 <!--more-->
-
 
 ## I. Introduction
 
@@ -33,12 +34,12 @@ This comprehensive guide will walk you through a robust and stable **n8n deploym
 
 Before we dive into the **n8n setup guide**, ensure you have the following ready on your server:
 
-  * A fresh Linux server (e.g., Ubuntu 22.04 LTS, Debian 12) with root or sudo access.
-  * **Docker** installed (refer to the official Docker documentation for installation).
-  * **Docker Compose** installed (usually comes with Docker Desktop or can be installed separately).
-  * **Nginx** installed (e.g., `sudo apt update && sudo apt install nginx`).
-  * A registered domain name (e.g., `n8n.yourdomain.com`) pointing to your server's IP address. This is highly recommended for production environments.
-  * Basic command-line familiarity and understanding of Linux file systems.
+* A fresh Linux server (e.g., Ubuntu 22.04 LTS, Debian 12) with root or sudo access.
+* **Docker** installed (refer to the official Docker documentation for installation).
+* **Docker Compose** installed (usually comes with Docker Desktop or can be installed separately).
+* **Nginx** installed (e.g., `sudo apt update && sudo apt install nginx`).
+* A registered domain name (e.g., `n8n.yourdomain.com`) pointing to your server's IP address. This is highly recommended for production environments.
+* Basic command-line familiarity and understanding of Linux file systems.
 
 ## III. Step 1: Setting Up Your n8n Docker Environment
 
@@ -104,9 +105,9 @@ volumes:
 
 **Before saving:**
 
-  * **Crucially, replace `n8n.yourdomain.com` with your actual domain.**
-  * **Generate a strong `N8N_ENCRYPTION_KEY`**. The n8n documentation recommends `openssl rand -base64 32`.
-  * **Set a strong `N8N_BASIC_AUTH_USER` and `N8N_BASIC_AUTH_PASSWORD`.**
+* **Crucially, replace `n8n.yourdomain.com` with your actual domain.**
+* **Generate a strong `N8N_ENCRYPTION_KEY`**. The n8n documentation recommends `openssl rand -base64 32`.
+* **Set a strong `N8N_BASIC_AUTH_USER` and `N8N_BASIC_AUTH_PASSWORD`.**
 
 ### Running n8n with Docker Compose
 
@@ -138,10 +139,10 @@ You should see output indicating n8n is starting up and listening on port `5678`
 
 **Nginx** will act as our **reverse proxy**, sitting in front of the n8n Docker container. This setup allows you to:
 
-  * Use a custom domain (e.g., `n8n.yourdomain.com`).
-  * Handle SSL/TLS encryption (HTTPS), which is essential for security.
-  * Proxy requests to the correct internal Docker port.
-  * Most importantly, facilitate WebSocket communication for the n8n UI and real-time updates.
+* Use a custom domain (e.g., `n8n.yourdomain.com`).
+* Handle SSL/TLS encryption (HTTPS), which is essential for security.
+* Proxy requests to the correct internal Docker port.
+* Most importantly, facilitate WebSocket communication for the n8n UI and real-time updates.
 
 ### Nginx Configuration for n8n: Enabling WebSockets
 
@@ -228,10 +229,10 @@ As shown in the Nginx configuration above, the following lines are paramount wit
         proxy_cache_bypass $http_upgrade;
 ```
 
-  * `proxy_http_version 1.1;`: Explicitly sets the proxy HTTP version to 1.1. This is necessary because WebSockets were introduced with HTTP/1.1's upgrade mechanism.
-  * `proxy_set_header Upgrade $http_upgrade;`: This directive tells Nginx to pass the `Upgrade` request header from the client to the n8n server. The `Upgrade` header is used to initiate a protocol upgrade, in this case, from HTTP to WebSocket.
-  * `proxy_set_header Connection 'upgrade';`: This directive instructs Nginx to add the `Connection: upgrade` header to the proxied request. This header works in conjunction with `Upgrade` to signal a protocol upgrade request.
-  * `proxy_cache_bypass $http_upgrade;`: This is an important detail. It tells Nginx to bypass any caching mechanisms if an `Upgrade` header is present. Caching WebSocket connections would break their persistent nature.
+* `proxy_http_version 1.1;`: Explicitly sets the proxy HTTP version to 1.1. This is necessary because WebSockets were introduced with HTTP/1.1's upgrade mechanism.
+* `proxy_set_header Upgrade $http_upgrade;`: This directive tells Nginx to pass the `Upgrade` request header from the client to the n8n server. The `Upgrade` header is used to initiate a protocol upgrade, in this case, from HTTP to WebSocket.
+* `proxy_set_header Connection 'upgrade';`: This directive instructs Nginx to add the `Connection: upgrade` header to the proxied request. This header works in conjunction with `Upgrade` to signal a protocol upgrade request.
+* `proxy_cache_bypass $http_upgrade;`: This is an important detail. It tells Nginx to bypass any caching mechanisms if an `Upgrade` header is present. Caching WebSocket connections would break their persistent nature.
 
 These four lines ensure that Nginx correctly interprets and forwards the WebSocket handshake and subsequent data flow, preventing the "Connection lost" error due to improper proxying.
 
@@ -255,7 +256,7 @@ It is critical to secure your **n8n deployment** with SSL/TLS (HTTPS) to encrypt
 
 Certbot, provided by the Electronic Frontier Foundation (EFF), automates the process of obtaining and renewing SSL certificates from Let's Encrypt. The recommended installation method is via Snap, which ensures you have the latest version and simplifies maintenance.
 
-1.  **Ensure Snapd is installed and up to date:**
+1. **Ensure Snapd is installed and up to date:**
     Most modern Linux distributions, including Ubuntu 16.04 LTS and later, come with `snapd` pre-installed. You can ensure it's up to date with:
 
     ```bash
@@ -265,28 +266,28 @@ Certbot, provided by the Electronic Frontier Foundation (EFF), automates the pro
 
     If `snapd` is not installed on your system, you can typically install it via your distribution's package manager (e.g., `sudo apt install snapd` on Debian/Ubuntu).
 
-2.  **Remove any conflicting Certbot OS packages:**
+2. **Remove any conflicting Certbot OS packages:**
     To avoid conflicts, it's best to remove any Certbot packages that might have been installed via your system's package manager (`apt`, `dnf`, `yum`, etc.):
 
     ```bash
     sudo apt remove certbot # For Debian/Ubuntu. Adjust for your OS if needed.
     ```
 
-3.  **Install Certbot via Snap:**
+3. **Install Certbot via Snap:**
     Install the classic Certbot snap package:
 
     ```bash
     sudo snap install --classic certbot
     ```
 
-4.  **Create a symbolic link for the `certbot` command:**
+4. **Create a symbolic link for the `certbot` command:**
     To ensure the `certbot` command is easily accessible from your PATH:
 
     ```bash
     sudo ln -s /snap/bin/certbot /usr/bin/certbot
     ```
 
-5.  **Obtain and install the SSL certificate for your domain:**
+5. **Obtain and install the SSL certificate for your domain:**
     Certbot's Nginx plugin will automatically configure Nginx to use your new certificate and set up redirects from HTTP to HTTPS. Run the following command, replacing `n8n.yourdomain.com` with your actual domain:
 
     ```bash
@@ -307,15 +308,15 @@ After Certbot completes, your Nginx configuration file for `n8n.yourdomain.com` 
 
 Once all steps are complete, your **n8n deployment** should be fully operational and accessible via your domain name.
 
-1.  Open your web browser and navigate to `https://n8n.yourdomain.com`.
-2.  You should be prompted for the basic authentication credentials (`n8nadmin` and your strong password) that you set in the `docker-compose.yml`.
-3.  After logging in, you should see the n8n dashboard without any "Connection lost" messages. The UI should be responsive, indicating that the WebSocket connection is stable.
+1. Open your web browser and navigate to `https://n8n.yourdomain.com`.
+2. You should be prompted for the basic authentication credentials (`n8nadmin` and your strong password) that you set in the `docker-compose.yml`.
+3. After logging in, you should see the n8n dashboard without any "Connection lost" messages. The UI should be responsive, indicating that the WebSocket connection is stable.
 
 If you encounter any issues, always start by checking:
 
-  * Nginx error logs: `sudo tail -f /var/log/nginx/error.log`
-  * n8n Docker container logs: `docker-compose logs -f n8n`
-  * Ensure your domain's DNS records are correctly pointing to your server's IP.
+* Nginx error logs: `sudo tail -f /var/log/nginx/error.log`
+* n8n Docker container logs: `docker-compose logs -f n8n`
+* Ensure your domain's DNS records are correctly pointing to your server's IP.
 
 ## VIII. Conclusion
 
@@ -331,5 +332,5 @@ By following these steps, you've created a reliable, secure, and performant envi
 
 #### References
 
-  * **n8n Docker Installation Guide:** [https://docs.n8n.io/hosting/installation/docker/](https://docs.n8n.io/hosting/installation/docker/)
-  * **Certbot Nginx Snap Installation Instructions:** [https://certbot.eff.org/instructions?ws=nginx\&os=snap](https://certbot.eff.org/instructions?ws=nginx&os=snap)
+* **n8n Docker Installation Guide:** [https://docs.n8n.io/hosting/installation/docker/](https://docs.n8n.io/hosting/installation/docker/)
+* **Certbot Nginx Snap Installation Instructions:** [https://certbot.eff.org/instructions?ws=nginx\&os=snap](https://certbot.eff.org/instructions?ws=nginx&os=snap)

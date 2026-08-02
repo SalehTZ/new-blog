@@ -7,16 +7,17 @@ tags:
   - "tips"
   - "flutter"
 slug: "flutter-tip-listview-builder"
+aliases:
+  - /tipntrick1/
 ---
 
 <!--more-->
-
 
 ## 🚀 Flutter Tip: Optimize Your ListView Performance with `ListView.builder`
 
 When displaying a long list of items in Flutter, using a simple `ListView` can lead to performance issues because all items are built at once. Instead, use `ListView.builder`, which builds only the visible items, improving performance significantly.
 
-### ✨ Example:
+### ✨ Example
 
 ```dart
 ListView.builder(

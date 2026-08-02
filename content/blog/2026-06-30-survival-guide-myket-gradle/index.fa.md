@@ -16,6 +16,8 @@ categories:
   - "Programming"
   - "Tutorial"
 slug: "survival-guide-myket-gradle"
+aliases:
+  - /survival_guide_1/
 ---
 
 <!--more-->
@@ -36,6 +38,7 @@ slug: "survival-guide-myket-gradle"
 برای این کار کافیه فایل `build.gradle` یا `settings.gradle` پروژه‌تون رو باز کنید و آدرس مایکت رو به بخش `repositories` اضافه کنید:
 
 {{% ltr %}}
+
 ```gradle {title="build.gradle" lineNos=inline}
 repositories {
     maven { url "[https://maven.myket.ir](https://maven.myket.ir)" }
@@ -43,6 +46,7 @@ repositories {
     mavenCentral()
 }
 ```
+
 {{% /ltr %}}
 
 این روش خوبه، اما اگر مدام پروژه‌های جدید می‌سازید، تنظیم کردن دستی برای هر پروژه واقعا خسته کننده‌ست. پس بریم سراغ راه حل دوم.
@@ -65,6 +69,7 @@ repositories {
 کدهای زیر رو کپی کنید و داخل این فایل قرار بدید:
 
 {{% ltr %}}
+
 ```kotlin {title="init.gradle.kts" lineNos=inline}
 import org.gradle.api.artifacts.repositories.MavenArtifactRepository
 import org.gradle.api.artifacts.dsl.RepositoryHandler
@@ -99,6 +104,7 @@ gradle.settingsEvaluated {
     dependencyResolutionManagement.repositories.enableMirror()
 }
 ```
+
 {{% /ltr %}}
 
 با این تنظیمات، هر درخواستی که گریدل برای دانلود لایبرری‌ها سمت سرورهای مسدود شده میفرسته، به صورت خودکار به میرور مایکت ریدایرکت میشه.

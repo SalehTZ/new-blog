@@ -15,6 +15,8 @@ categories:
   - "Flutter"
   - "Release Notes"
 slug: "flutter-3-32-0"
+aliases:
+  - /flutter_3_32_0/
 ---
 
 <!--more-->

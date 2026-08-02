@@ -13,6 +13,8 @@ categories:
   - "dart"
   - "packages"
 slug: "json2dartgen"
+aliases:
+  - /convert_json_to_model_flutter/
 ---
 
 <!--more-->

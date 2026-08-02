@@ -13,6 +13,8 @@ categories:
   - "command-line"
   - "cheat-sheet"
 slug: "linux-commands-cheat-sheet"
+aliases:
+  - /70-must_know_linux_commands/
 ---
 
 The command line is where you get real control in Linux. It lets you dig into the system, automate tasks, and solve problems directly.

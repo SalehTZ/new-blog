@@ -3,6 +3,8 @@ title: "اولین پست"
 date: "2025-03-25T11:56:49+03:30"
 draft: false
 slug: "first-post"
+aliases:
+  - /first_post/
 ---
 
 <!--more-->
@@ -58,4 +60,4 @@ slug: "first-post"
 
 *تا پست بعدی، پرقدرت کدنویسی کن!*
 
-— _صالح طالبی زاده_
+— *صالح طالبی زاده*

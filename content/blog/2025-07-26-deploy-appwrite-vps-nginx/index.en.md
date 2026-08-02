@@ -14,6 +14,8 @@ categories:
   - "Backend"
   - "DevOps"
 slug: "deploy-appwrite-vps-nginx"
+aliases:
+  - /deploy_appwrite_to_vps_nginx/
 ---
 
 Self-hosting Appwrite gives you complete control over your backend infrastructure, data, and costs. It's a powerful solution for developers who want a flexible Backend-as-a-Service (BaaS) without vendor lock-in. However, a common challenge arises when you want to deploy Appwrite on a Virtual Private Server (VPS) that's already running other websites using an Nginx web server.
