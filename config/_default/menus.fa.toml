@@ -21,6 +21,11 @@
   weight = 15
 
 [[main]]
+  name = "پروژه‌ها"
+  pageRef = "projects"
+  weight = 18
+
+[[main]]
   name = "درباره من"
   pageRef = "about"
   weight = 20
